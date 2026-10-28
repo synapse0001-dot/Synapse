@@ -1,0 +1,45 @@
+# Beispiel-Prompts für fotorealistische Bilder.
+# Aufbau: Motiv → Umgebung → Licht → Kamera/Objektiv → Stimmung.
+# Englische Prompts liefern bei den meisten Modellen bessere Ergebnisse.
+
+portrait:
+  prompt: >
+    close-up portrait of an elderly fisherwoman with weathered skin and grey hair,
+    standing on a foggy harbor at dawn, soft diffused window-like light from the left,
+    85mm lens at f/1.8, catchlights in the eyes, calm expression
+  width: 832
+  height: 1216
+
+landschaft:
+  prompt: >
+    alpine lake surrounded by pine forest and snow-capped peaks at golden hour,
+    mirror-like reflections on the water, low mist over the surface,
+    wide-angle 16mm lens, f/11, long exposure
+  width: 1344
+  height: 768
+
+produkt:
+  prompt: >
+    product photo of a matte black ceramic coffee cup with rising steam on a walnut table,
+    morning sunlight through a window, soft shadows, 100mm macro lens, f/4,
+    minimalist Scandinavian kitchen in the blurred background
+
+strasse:
+  prompt: >
+    rainy Tokyo side street at night, neon signs reflecting on wet asphalt,
+    a person with a transparent umbrella walking away from the camera,
+    35mm lens, f/2, street photography, Fujifilm color
+
+essen:
+  prompt: >
+    overhead food photo of a rustic sourdough bread loaf cut open on a linen cloth,
+    flour dust, butter and sea salt beside it, soft natural light from a north window,
+    50mm lens, f/5.6
+
+tier:
+  prompt: >
+    red fox sitting in fresh snow in a birch forest, frost on its fur,
+    backlit by low winter sun, 400mm telephoto lens, f/5.6,
+    wildlife photography, creamy bokeh background
+  width: 1216
+  height: 832
