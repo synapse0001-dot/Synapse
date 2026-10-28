@@ -87,6 +87,12 @@ def main():
     token = os.environ.get("HF_TOKEN")
     if not token:
         sys.exit("Fehler: HF_TOKEN ist nicht gesetzt. Siehe README, Abschnitt 'Einrichtung'.")
+    # Tokens ohne 'hf_' hält huggingface_hub für Anbieter-Schlüssel und schickt sie
+    # direkt an den Anbieter – das endet in einem unverständlichen 401.
+    if not token.strip().startswith("hf_"):
+        sys.exit("Fehler: HF_TOKEN muss mit 'hf_' beginnen. Bitte nur den reinen Token "
+                 "ohne Anführungszeichen oder 'HF_TOKEN=' als Secret eintragen.")
+    token = token.strip()
 
     presets = load_presets()
     if args.all_presets:
